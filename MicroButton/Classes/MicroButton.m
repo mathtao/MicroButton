@@ -33,8 +33,10 @@
 
 - (void)initData
 {
-    [self setImage:[UIImage imageNamed:@"micro_ic"] forState:UIControlStateNormal];
-    [self setImage:[UIImage imageNamed:@"micro_ic"] forState:UIControlStateHighlighted];
+    NSBundle *bundle = [NSBundle bundleForClass:[MicroButton class]];
+    UIImage *ic = [UIImage imageNamed:@"MicroButton.bundle/micro_ic" inBundle:bundle compatibleWithTraitCollection:nil];
+    [self setImage:ic forState:UIControlStateNormal];
+    [self setImage:ic forState:UIControlStateHighlighted];
     [self addTarget:self action:@selector(clickedButton:) forControlEvents:UIControlEventTouchUpInside];
     
     [self.layer addSublayer:self.circleSmall];
