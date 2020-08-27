@@ -7,6 +7,9 @@ Pod::Spec.new do |s|
     s.authors      = {'mathtao' => '409426819@qq.com'}
     s.platform     = :ios, '8.0'
     s.source       = {:git => 'https://github.com/mathtao/MicroButton.git', :tag => s.version}
-    s.source_files = 'MicroButton/*.{h,m}'
+    s.source_files = 'MicroButton/Classes/*.{h,m}'
+    s.resource_bundles = {
+        'MicroButton' => ['MicroButton/Assets/*.png']
+    }
     s.requires_arc = true
 end
