@@ -2,7 +2,7 @@
 一款简单版本的语音麦克风动画（ps：今天给一个群友写的顺便上传了，后续会慢慢上传一些自己所觉得好玩的小控件）
 
 ### ScreenShot
-![image](https://github.com/mathtao/Micro/blob/master/micro.gif)
+![image](https://github.com/mathtao/MicroButton/blob/master/micro.gif)
 
 ### Usage
 ```objc
